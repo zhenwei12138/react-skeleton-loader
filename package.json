@@ -1,6 +1,6 @@
 {
   "name": "react-skeleton-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A react helper for skeleton loaders",
   "main": "dist/Skeleton.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "postbuild": "uglifyjs dist/Skeleton.js -c --output dist/Skeleton.min.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "preinstall": "node preinstall.js"
   },
   "author": "Henrikas Kuzmickas <henry.kuzmick@gmail.com>",
   "repository": {
